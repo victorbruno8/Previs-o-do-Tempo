@@ -26,5 +26,17 @@ function cliqueiNoBotao() {
     const cidade = document.querySelector('.input-city').value
 
     buscarCidade(cidade)
+
+    document.querySelector('.input-city').value = ""
     
 }
+
+function cliqueiEnter(event) {
+    if (event.key === "Enter") {
+        const cidade = document.querySelector('.input-city').value;
+
+        buscarCidade(cidade);
+    }
+}
+
+
